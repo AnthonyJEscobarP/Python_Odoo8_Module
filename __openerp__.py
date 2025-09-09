@@ -6,6 +6,7 @@
   'depends': ['base','web'],
   'data': [
     'security/roles.xml',
+    'security/auth.xml',
     'security/ir.model.access.csv',
     'views/classroom.xml',
     'views/subject.xml',
@@ -14,7 +15,7 @@
     #'data/demo_data.xml',
     'data/sequence_card.xml',
   ],
-  'demo': ['demo/demo_data.xml'],
+  #'demo': ['demo/demo_data.xml'],
   'installable': True,
   'application': True,
 }

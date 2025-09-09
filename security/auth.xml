@@ -1,0 +1,10 @@
+<openerp>
+    <data>
+        <record id="student_rule_self" model="ir.rule">
+            <field name="name">Permisos de estudiantes para ver sus propios datos</field>
+            <field name="model_id" ref="model_school_module_student"/>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('school_module.student_role_group'))]"/>
+        </record>
+    </data>
+</openerp>
