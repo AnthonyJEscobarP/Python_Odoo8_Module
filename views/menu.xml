@@ -1,0 +1,7 @@
+<odoo>
+    <menuitem id="primary_menu" name="Administracion Estudiantil" sequence="1"/>
+
+    <menuitem id="submenu_student" name="Estudiantes" parent="primary_menu" action="student_actions"/>
+    <menuitem id="submenu_subject" name="Materias" parent="primary_menu" action="subject_actions"/>
+    <menuitem id="submenu_classroom" name="Aulas" parent="primary_menu" action="classroom_actions"/> 
+</odoo>
