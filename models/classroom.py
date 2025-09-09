@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from openerp import models, fields, _
 
 class Classroom(models.Model):
