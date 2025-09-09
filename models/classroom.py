@@ -2,14 +2,14 @@
 from openerp import models, fields, _
 
 class Classroom(models.Model):
-    _name = 'schoolModule.classroom'
+    _name = 'school_module.classroom'
     _description = 'Modelo de Aulas'
 
     name = fields.Char('Aula', required=True)
     capacity = fields.Integer('Capacidad', required=True)
     
     subject_ids = fields.One2many(
-        'schoolModule.subject',
+        'school_module.subject',
         'classroom_id', 
         string='Materias',
     )

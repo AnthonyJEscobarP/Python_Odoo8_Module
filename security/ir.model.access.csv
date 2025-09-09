@@ -1,9 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_student_all,student_full_access,model_schoolModule_student,schoolModule.teacher_role_group,1,1,1,1
-access_student_student,student_student_access,model_schoolModule_student,schoolModule.student_role_group,1,0,0,0
+access_student_all,student_full_access,model_school_module_student,school_module.teacher_role_group,1,1,1,1
+access_student_student,student_student_access,model_school_module_student,school_module.student_role_group,1,0,0,0
 
-access_subject_all,subject_full_access,model_schoolModule_subject,schoolModule.teacher_role_group,1,1,1,1
-access_subject_student,subject_student_access,model_schoolModule_subject,schoolModule.student_role_group,1,0,0,0
+access_subject_all,subject_full_access,model_school_module_subject,school_module.teacher_role_group,1,1,1,1
+access_subject_student,subject_student_access,model_school_module_subject,school_module.student_role_group,1,0,0,0
 
-access_classroom_all,classroom_full_access,model_schoolModule_classroom,schoolModule.teacher_role_group,1,1,1,1
-access_classroom_student,classroom_student_access,model_schoolModule_classroom,schoolModule.student_role_group,1,0,0,0
+access_classroom_all,classroom_full_access,model_school_module_classroom,school_module.teacher_role_group,1,1,1,1
+access_classroom_student,classroom_student_access,model_school_module_classroom,school_module.student_role_group,1,0,0,0

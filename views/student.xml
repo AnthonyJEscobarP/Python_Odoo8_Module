@@ -1,7 +1,7 @@
 <odoo>
     <record id="student_tree_view" model="ir.ui.view">
         <field name="name">student.tree_view</field>
-        <field name="model">schoolModule.student</field>
+        <field name="model">school_module.student</field>
         <field name="arch" type="xml">
             <tree string="Listado estudiantes">
                 <field name="name"/>
@@ -16,7 +16,7 @@
 
     <record id="student_form_view" model="ir.ui.view">
         <field name="name">student.form_view</field>
-        <field name="model">schoolModule.student</field>
+        <field name="model">school_module.student</field>
         <field name="arch" type="xml">
             <form string="informacion personal">
                 <sheet>
@@ -38,7 +38,7 @@
 
     <record id="student_actions" model="ir.actions.act_window">
         <field name="name">Estudiantes</field>
-        <field name="res_model">schoolModule.student</field>
+        <field name="res_model">school_module.student</field>
         <field name="view_mode">tree,form</field>
     </record>
 </odoo>
