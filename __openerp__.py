@@ -5,8 +5,8 @@
   'category': 'Education',
   'depends': ['base','web'],
   'data': [
-    'security/ir.model.access.csv',
     'security/roles.xml',
+    'security/ir.model.access.csv',
     'views/classroom.xml',
     'views/subject.xml',
     'views/student.xml',
