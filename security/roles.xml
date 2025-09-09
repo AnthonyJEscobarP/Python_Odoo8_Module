@@ -1,4 +1,4 @@
-<odoo>
+<openerp>
     <record id="student_role_group" model="res.groups">
         <field name="name">Estudiante</field>
         <field name="category_id" ref="base.module_category_hidden"/>
@@ -15,4 +15,4 @@
         <field name="domain_force">[('user_id','=',user.id)]</field>
         <field name="groups" eval="[(4, ref('school_module.student_role_group'))]"/>
     </record>
-</odoo>
+</openerp>

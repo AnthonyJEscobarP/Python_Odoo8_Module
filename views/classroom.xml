@@ -1,4 +1,4 @@
-<odoo>
+<openerp>
     <record id="classroom_tree_view" model="ir.ui.view">
         <field name="name">classroom.tree_view</field>
         <field name="model">school_module.classroom</field>
@@ -31,4 +31,4 @@
         <field name="res_model">school_module.classroom</field>
         <field name="view_mode">tree,form</field>
     </record>
-</odoo>
+</openerp>
