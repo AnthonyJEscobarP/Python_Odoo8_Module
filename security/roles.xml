@@ -1,18 +1,20 @@
 <openerp>
-    <record id="student_role_group" model="res.groups">
-        <field name="name">Estudiante</field>
-        <field name="category_id" ref="base.module_category_hidden"/>
-    </record>
+    <data>
+        <record id="student_role_group" model="res.groups">
+            <field name="name">Estudiante</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
 
-    <record id="teacher_role_group" model="res.groups">
-        <field name="name">Profesor / Administrador</field>
-        <field name="category_id" ref="base.module_category_hidden"/>
-    </record>
+        <record id="teacher_role_group" model="res.groups">
+            <field name="name">Profesor / Administrador</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
 
-    <record id="student_rule_self" model="ir.rule">
-        <field name="name">Permisos de estudiantes para ver sus propios datos</field>
-        <field name="model_id" ref="model_school_module_student"/>
-        <field name="domain_force">[('user_id','=',user.id)]</field>
-        <field name="groups" eval="[(4, ref('school_module.student_role_group'))]"/>
-    </record>
+        <record id="student_rule_self" model="ir.rule">
+            <field name="name">Permisos de estudiantes para ver sus propios datos</field>
+            <field name="model_id" ref="model_school_module_student"/>
+            <field name="domain_force">[('user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('school_module.student_role_group'))]"/>
+        </record>
+    </data>
 </openerp>
