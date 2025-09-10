@@ -5,7 +5,7 @@ import re
 from datetime import datetime
 
 class student(models.Model):
-    _name = 'Python_Odoo8_Module.student'
+    _name = 'python_odoo8_module.student'
     _description = 'Modelo de estudiante'
 
     name = fields.Char('Nombre Completo', required=True)
@@ -22,7 +22,7 @@ class student(models.Model):
     section = fields.Selection([('A', 'A'), ('B', 'B'), ('C', 'C')], 'Seccion', required=True)
     
     subject_ids = fields.Many2many(
-        'Python_Odoo8_Module.subject',
+        'python_odoo8_module.subject',
         'student_subject_rel',
         'student_id', 'subject_id',
         string='Materias'

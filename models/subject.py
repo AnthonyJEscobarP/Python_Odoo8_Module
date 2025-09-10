@@ -3,21 +3,21 @@ from openerp import models, fields, api,_
 from openerp.exceptions import Warning
 
 class Subject(models.Model):
-    _name = 'Python_Odoo8_Module.subject'
+    _name = 'python_odoo8_module.subject'
     _description = 'Modelo de materias/cursos'
 
     name = fields.Char('Nombre de Materia', required=True)
     description = fields.Text('Descripción')
     
     student_ids = fields.Many2many(
-        'Python_Odoo8_Module.student',
+        'python_odoo8_module.student',
         'student_subject_rel',
         'subject_id', 'student_id',
         string='Estudiantes'
     )
     
     classroom_id = fields.Many2one(
-        'Python_Odoo8_Module.classroom',
+        'python_odoo8_module.classroom',
         string='Aula',
         ondelete='set null'
     )

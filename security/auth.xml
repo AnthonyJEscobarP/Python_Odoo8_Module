@@ -2,9 +2,9 @@
     <data>
         <record id="student_rule_self" model="ir.rule">
             <field name="name">Permisos de estudiantes para ver sus propios datos</field>
-            <field name="model_id" ref="model_Python_Odoo8_Module_student"/>
+            <field name="model_id" ref="model_python_odoo8_module_student"/>
             <field name="domain_force">[('user_id','=',user.id)]</field>
-            <field name="groups" eval="[(4, ref('Python_Odoo8_Module.student_role_group'))]"/>
+            <field name="groups" eval="[(4, ref('python_odoo8_module.student_role_group'))]"/>
         </record>
     </data>
 </openerp>

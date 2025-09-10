@@ -2,7 +2,7 @@
     <data>
         <record id="classroom_tree_view" model="ir.ui.view">
             <field name="name">classroom.tree_view</field>
-            <field name="model">Python_Odoo8_Module.classroom</field>
+            <field name="model">python_odoo8_module.classroom</field>
             <field name="arch" type="xml">
                 <tree string="Listado aulas">
                     <field name="name"/>
@@ -13,7 +13,7 @@
 
         <record id="classroom_form_view" model="ir.ui.view">
             <field name="name">classroom.form_view</field>
-            <field name="model">Python_Odoo8_Module.classroom</field>
+            <field name="model">python_odoo8_module.classroom</field>
             <field name="arch" type="xml">
                 <form string="Informacion de aula">
                     <sheet>
@@ -29,7 +29,7 @@
 
         <record id="classroom_actions" model="ir.actions.act_window">
             <field name="name">Aulas</field>
-            <field name="res_model">Python_Odoo8_Module.classroom</field>
+            <field name="res_model">python_odoo8_module.classroom</field>
             <field name="view_mode">tree,form</field>
         </record>
     </data>
