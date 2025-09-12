@@ -51,7 +51,7 @@ class student(models.Model):
     @api.model
     def create(self, vals):
         if not vals.get('card'):
-            sequence = self.env['ir.sequence'].next_by_code('student.seq') or '1'
+            sequence = self.env['ir.sequence'].next_by_code('student_seq') or '1'
             sequence_string = str(sequence).zfill(3)
             year = datetime.now().year
             vals['card'] = "%s%s" % (year, sequence_string)
