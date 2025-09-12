@@ -1,5 +1,11 @@
 <openerp>
-  <data>
+  <data noupdate="1">
+
+    <record id="seq_type_student_card" model="ir.sequence.type">
+      <field name="name">Student Card</field>
+      <field name="code">student_seq</field>
+    </record>
+
     <record id="card_sequence" model="ir.sequence">
       <field name="name">Student Card Sequence</field>
       <field name="code">student_seq</field>
