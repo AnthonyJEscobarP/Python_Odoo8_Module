@@ -2,7 +2,7 @@
   <data>
     <record id="card_sequence" model="ir.sequence">
       <field name="name">Student Card Sequence</field>
-      <field name="code">student_seq</field>
+      <field name="code">python_odoo8_module.student</field>
       <field name="prefix"></field>
       <field name="padding">3</field>
       <field name="number_next">1</field>
